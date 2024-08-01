@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./html/head.html', {
+"title": "Сибирь. Новости",
+})
+
+<body class="news-page">
+  @@include('./html/header.html', {})
+
+  <main class="main news-page__main">
+    <section class="section news-page__section">
+      <div class="container news-page__container">
+        <h1 class="news-page__title title title_25">
+          Новости Сибири
+        </h1>
+        <div class="news-page__btn-wrapper">
+          <a class="news-page__btn news-page__btn_green" href="novosti.html">
+            Новости
+          </a>
+          <a class="news-page__btn news-page__btn_white" href="akcii.html">
+            Акции
+          </a>
+        </div>
+        <ul class="news-page__cards-list">
+          <li class="news-page__cards-item">
+            <div class="news-page__card-img-wrapper">
+              <img src="@img/news-img-1.jpg" alt="Проект">
+            </div>
+            <p class="news-page__card-date">
+              01 мая 2024
+            </p>
+            <a class="news-page__card-link" href="novosti-item.html">
+              <h2 class="news-page__card-title">
+                Динамика строительства «Сосновый». Апрель 2024.
+              </h2>
+            </a>
+          </li>
+          <li class="news-page__cards-item">
+            <div class="news-page__card-img-wrapper">
+              <img src="@img/news-img-2.jpg" alt="Проект">
+            </div>
+            <p class="news-page__card-date">
+              01 мая 2024
+            </p>
+            <a class="news-page__card-link" href="novosti-item.html">
+              <h2 class="news-page__card-title">
+                Сибирь разрабатывает новый проект ЖК «Успенка»
+              </h2>
+            </a>
+          </li>
+          <li class="news-page__cards-item">
+            <div class="news-page__card-img-wrapper">
+              <img src="@img/news-img-3.jpg" alt="Проект">
+            </div>
+            <p class="news-page__card-date">
+              01 мая 2024
+            </p>
+            <a class="news-page__card-link" href="novosti-item.html">
+              <h2 class="news-page__card-title">
+                Динамика строительства Сосновый. Апрель 2024.
+              </h2>
+            </a>
+          </li>
+          <li class="news-page__cards-item">
+            <div class="news-page__card-img-wrapper">
+              <img src="@img/news-img-4.jpg" alt="Проект">
+            </div>
+            <p class="news-page__card-date">
+              01 мая 2024
+            </p>
+            <a class="news-page__card-link" href="novosti-item.html">
+              <h2 class="news-page__card-title">
+                Сибирь объявляет об операционных результатах первого квартала 2024
+              </h2>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  @@include('./html/footer.html', {})
+</body>
+
+</html>
