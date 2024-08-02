@@ -1690,12 +1690,17 @@ jQuery(($) => {
 // -------------------------------------------- start BURGER: ---------------------------------------------
 
 const burger = document.querySelector(".burger");
-const headerNav = document.querySelector(".header__nav");
 
 if (burger) {
+  // const headerNav = document.querySelector(".header__nav");
+  // const mobMenu = mobMenuWrap.querySelector(".header__mob-menu");
+  // const mobMenuWrap = document.querySelector(".header__mob-menu-wrap");
+
+  const closeBtn = document.querySelector(".burger__close-btn");
   burger.addEventListener("click", function (e) {
     console.log("тест");
-    burger.classList.toggle("burger_active");
+    burger.classList.add("burger_active");
+    closeBtn.classList.add("burger__close-btn_active");
     headerNav.classList.toggle("nav_active");
   });
 

@@ -57,19 +57,10 @@
       </button>
     </div>
 
-    <button class="header__burger burger">
-      <div class="burger__open-btn">
-        <svg width="30" height="17" viewBox="0 0 30 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 1H30M0 16H30M0 8.25806H30" stroke="#787878" stroke-width="2"/>
-        </svg>          
-      </div>
-
-      <div class="burger__close-btn">
-        <svg width="30" height="17" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 19L31 1M31 19L1 1" stroke="#787878" stroke-width="2"/>
-        </svg>          
-      </div>
-
+    <button class="header__burger burger popup-link" href="#mob-menu">
+      <svg width="30" height="17" viewBox="0 0 30 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 1H30M0 16H30M0 8.25806H30" stroke="#787878" stroke-width="2" />
+      </svg>
     </button>
 
   </div>
@@ -576,14 +567,16 @@
         <span class="promo__time">
           <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_850_17965)">
-            <path d="M8.5 4.31579V8.36842L10.7105 10.2105M15.5 8C15.5 11.866 12.366 15 8.5 15C4.63401 15 1.5 11.866 1.5 8C1.5 4.13401 4.63401 1 8.5 1C12.366 1 15.5 4.13401 15.5 8Z" stroke="#748D55" stroke-width="1.5"/>
+              <path
+                d="M8.5 4.31579V8.36842L10.7105 10.2105M15.5 8C15.5 11.866 12.366 15 8.5 15C4.63401 15 1.5 11.866 1.5 8C1.5 4.13401 4.63401 1 8.5 1C12.366 1 15.5 4.13401 15.5 8Z"
+                stroke="#748D55" stroke-width="1.5" />
             </g>
             <defs>
-            <clipPath id="clip0_850_17965">
-            <rect width="16" height="16" fill="white" transform="translate(0.5)"/>
-            </clipPath>
+              <clipPath id="clip0_850_17965">
+                <rect width="16" height="16" fill="white" transform="translate(0.5)" />
+              </clipPath>
             </defs>
-          </svg>            
+          </svg>
           Осталось 12 дней
         </span>
       </div>
@@ -592,7 +585,7 @@
         <div class="promo__img">
           <img src="img/popup-img.jpg" alt="Квартиры в расрочку от 2%">
         </div>
-  
+
         <ul class="promo__list">
           <li class="promo__item">
             <h3 class="promo__item-title">
@@ -602,32 +595,34 @@
               Забудьте о платежах по ипотеке!
             </p>
           </li>
-  
+
           <li class="promo__item">
             <h3 class="promo__item-title">
               Что это такое?
             </h3>
             <p class="promo__item-text">
-              Мы запускаем акцию, которая позволяет нам оплачивать расходы по ипотеке до конца года в сданных домах: Дом на Мысу, Квартал на Московском и в Доме на Баумана.
+              Мы запускаем акцию, которая позволяет нам оплачивать расходы по ипотеке до конца года в сданных домах: Дом
+              на Мысу, Квартал на Московском и в Доме на Баумана.
             </p>
           </li>
-  
+
           <li class="promo__item">
             <h3 class="promo__item-title">
               “А в Кедровом береге тоже заплатите?”
             </h3>
             <p class="promo__item-text">
-              Да! Мы платим по ипотеке до ввода дома. Акция распространяется на строящиеся проекты: Квартал в Гагаринском парке и на Кедровый берег.
+              Да! Мы платим по ипотеке до ввода дома. Акция распространяется на строящиеся проекты: Квартал в
+              Гагаринском парке и на Кедровый берег.
             </p>
           </li>
         </ul>
-  
-        <p class="promo__desc">        
+
+        <p class="promo__desc">
           Срок предложения ограничен. <br><br>
           Узнайте подробнее об условиях акции у менеджеров в отделе продаж по телефону:
         </p>
         <a href="tel:+73452611157" class="promo__phone">8 (3452) 611-157</a>
-  
+
         <button class="promo__btn btn btn_dark popup-link" href="#popup-form">
           Связаться с нами
         </button>
@@ -635,14 +630,76 @@
 
       <button class="promo__close popup-close">
         <svg width="29" height="22" viewBox="0 0 29 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 1L28.5 21M1 21L28.5 1" stroke="black"/>
-        </svg>          
+          <path d="M1 1L28.5 21M1 21L28.5 1" stroke="black" />
+        </svg>
       </button>
     </div>
   </div>
 </div>
 
+<div class="popup" id="mob-menu">
+  <div class="popup__body">
+    <div class="popup__content popup__promo mob-menu">
 
+      <div class="header__logo logo">
+        <a href="index.html" class="logo__link">
+          <img class="logo__main" src="img/logo.png" alt="Логотип Сибирь">
+        </a>
+      </div>
+
+      <p class="header__mob-menu-desc">
+        Дублирующие педали от производителя с доставкой по всей России
+      </p>
+
+      <div class="header__nav-wrap">
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#catalog" class="nav__link">
+                <p class="nav__text">
+                  Каталог
+                </p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#o-companii" class="nav__link">
+                <p class="nav__text">
+                  О компании
+                </p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#kontakti" class="nav__link">
+                <p class="nav__text">
+                  Контакты
+                </p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header__contacts contacts" id="footer-contacts">
+        <a href="tel:8 982 132 90 90" class="contacts__item contacts__item_phone">
+          8 982 132 90 90
+        </a>
+        <button class="contacts__btn popup-link" href="#popup-form">
+          Заказать звонок
+        </button>
+        <a href="mailto:sell@automaster.one" class="contacts__item contacts__item_email">
+          sell@automaster.one
+        </a>
+      </div>
+
+      <button class="burger__close-btn popup-close">
+        <svg width="30" height="17" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 19L31 1M31 19L1 1" stroke="#787878" stroke-width="2" />
+        </svg>
+      </button>
+
+    </div>
+  </div>
+</div>
 
 
 
