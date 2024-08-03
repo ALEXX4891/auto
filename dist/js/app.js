@@ -597,7 +597,7 @@ new Swiper(".promo_swiper", {
   // loop: true,
   // allowTouchMove: true,
   // slidesPerView: auto, // сколько слайдов показывать, можно дробно
-  slidesPerView: 2, // сколько слайдов показывать, можно дробно
+  slidesPerView: 1, // сколько слайдов показывать, можно дробно
   // slidersPerGroup: 3, // сколько слайдов в группе
   // centeredSlides: true, //выравнивание слайдов по центру
   // initialSlide: 0, //начальный слайд (c нуля)

@@ -1565,6 +1565,10 @@ ul {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   min-height: 84px;
   z-index: 100;
   background: #FFFFFF;
@@ -1859,6 +1863,7 @@ ul {
   }
 }
 .footer .footer__container .footer__contacts .contacts__item {
+  width: max-content;
   font-family: Inter;
   font-size: 18px;
   font-weight: 500;
@@ -1944,6 +1949,482 @@ ul {
   max-width: 180px;
 }
 
+.glavnaya .promo {
+  overflow: hidden;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_1 {
+  position: relative;
+  background: url(../img/slide-1-bg-1920.jpg) bottom 0 right 0/cover no-repeat;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_1 .promo__label {
+  position: absolute;
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  padding: 10px;
+  gap: 11px;
+  min-height: 70px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(32px);
+  border-radius: 120px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_1 .promo__label .promo__label-text {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_1 .promo__label.promo__label_1 {
+  top: 178px;
+  right: 62px;
+  max-width: 219px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_1 .promo__label.promo__label_2 {
+  bottom: 91px;
+  right: 322px;
+  max-width: 302px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_1 .promo__container {
+  padding: 93px 0 50px;
+  position: relative;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 30px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_1 .promo__container .promo__title {
+  max-width: 780px;
+  font-family: Inter;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 63px;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_1 .promo__container .promo__subtitle {
+  max-width: 780px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: #BBBBBB;
+  margin-bottom: 18px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_1 .promo__container .promo__btn {
+  max-width: 230px;
+  margin-bottom: 30px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_1 .promo__container .swiper-navigation {
+  position: relative;
+  width: max-content;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 15px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_1 .promo__container .swiper-navigation .swiper-button {
+  position: relative;
+  top: initial;
+  left: initial;
+  right: initial;
+  bottom: initial;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  width: 49px;
+  height: 35px;
+  border: 1px solid #DC2F2F;
+  border-radius: 50px;
+  transition: border-color 0.3s ease-in-out;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_1 .promo__container .swiper-navigation .swiper-button svg path {
+  transition: stroke 0.3s ease-in-out;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_1 .promo__container .swiper-navigation .swiper-button:hover {
+  border-color: #b02626;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_1 .promo__container .swiper-navigation .swiper-button:hover svg path {
+  stroke: #b02626;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_1 .promo__container .swiper-navigation .swiper-button::after {
+  display: none;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_2 {
+  background: url(../img/slide-2-bg-1920.jpg) bottom 0 right 0/cover no-repeat;
+  position: relative;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_2 .promo__label {
+  position: absolute;
+  gap: 11px;
+  min-height: 70px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_2 .promo__label .promo__label-text {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_2 .promo__label.promo__label_1 {
+  top: 55px;
+  right: 304px;
+  width: 300px;
+  height: 200px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_2 .promo__label.promo__label_1 .promo__img-wrap {
+  position: absolute;
+  width: 156px;
+  height: 156px;
+  overflow: hidden;
+  background: url(image.png);
+  mix-blend-mode: normal;
+  border: 3px solid #AD1818;
+  border-radius: 500px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_2 .promo__label.promo__label_1 .promo__label-text {
+  position: absolute;
+  bottom: 34px;
+  left: -12px;
+  display: grid;
+  place-items: center;
+  padding: 10px 14px;
+  position: absolute;
+  max-width: 80px;
+  min-height: 37px;
+  background: #AD1818;
+  border-radius: 50px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.94px;
+  text-align: left;
+  color: #fff;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_2 .promo__label.promo__label_1 .promo__arrow {
+  position: absolute;
+  bottom: 57px;
+  right: 55px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_2 .promo__container {
+  padding: 115px 0 50px;
+  position: relative;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 30px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_2 .promo__container .promo__title {
+  max-width: 780px;
+  font-family: Inter;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 63px;
+  text-align: left;
+  color: #303030;
+  text-transform: uppercase;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_2 .promo__container .promo__subtitle {
+  max-width: 780px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: #787878;
+  margin-bottom: 18px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_2 .promo__container .promo__btn {
+  max-width: 266px;
+  margin-bottom: 30px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_2 .promo__container .swiper-navigation {
+  position: relative;
+  width: max-content;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 15px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_2 .promo__container .swiper-navigation .swiper-button {
+  position: relative;
+  top: initial;
+  left: initial;
+  right: initial;
+  bottom: initial;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  width: 49px;
+  height: 35px;
+  border: 1px solid #DC2F2F;
+  border-radius: 50px;
+  transition: border-color 0.3s ease-in-out;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_2 .promo__container .swiper-navigation .swiper-button svg path {
+  transition: stroke 0.3s ease-in-out;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_2 .promo__container .swiper-navigation .swiper-button:hover {
+  border-color: #b02626;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_2 .promo__container .swiper-navigation .swiper-button:hover svg path {
+  stroke: #b02626;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_2 .promo__container .swiper-navigation .swiper-button::after {
+  display: none;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_3 {
+  background: url(../img/slide-3-bg-1920.jpg) bottom 0 right 0/cover no-repeat;
+  position: relative;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_3 .promo__label {
+  position: absolute;
+  gap: 11px;
+  min-height: 70px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_3 .promo__label .promo__label-text {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_3 .promo__label.promo__label_1 {
+  top: 55px;
+  right: 304px;
+  width: 300px;
+  height: 200px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_3 .promo__label.promo__label_1 .promo__img-wrap {
+  position: absolute;
+  width: 156px;
+  height: 156px;
+  overflow: hidden;
+  background: url(image.png);
+  mix-blend-mode: normal;
+  border: 3px solid #AD1818;
+  border-radius: 500px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_3 .promo__label.promo__label_1 .promo__label-text {
+  position: absolute;
+  bottom: 34px;
+  left: -12px;
+  display: grid;
+  place-items: center;
+  padding: 10px 14px;
+  position: absolute;
+  max-width: 80px;
+  min-height: 37px;
+  background: #AD1818;
+  border-radius: 50px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.94px;
+  text-align: left;
+  color: #fff;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_3 .promo__label.promo__label_1 .promo__arrow {
+  position: absolute;
+  bottom: 57px;
+  right: 55px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_3 .promo__container {
+  padding: 125px 0 50px;
+  position: relative;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 30px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_3 .promo__container .promo__title {
+  max-width: 780px;
+  font-family: Inter;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 63px;
+  text-align: left;
+  color: #303030;
+  text-transform: uppercase;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_3 .promo__container .promo__subtitle {
+  max-width: 780px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: #787878;
+  margin-bottom: 18px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_3 .promo__container .promo__btn {
+  max-width: 266px;
+  margin-bottom: 30px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_3 .promo__container .swiper-navigation {
+  position: relative;
+  width: max-content;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 15px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_3 .promo__container .swiper-navigation .swiper-button {
+  position: relative;
+  top: initial;
+  left: initial;
+  right: initial;
+  bottom: initial;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  width: 49px;
+  height: 35px;
+  border: 1px solid #DC2F2F;
+  border-radius: 50px;
+  transition: border-color 0.3s ease-in-out;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_3 .promo__container .swiper-navigation .swiper-button svg path {
+  transition: stroke 0.3s ease-in-out;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_3 .promo__container .swiper-navigation .swiper-button:hover {
+  border-color: #b02626;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_3 .promo__container .swiper-navigation .swiper-button:hover svg path {
+  stroke: #b02626;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_3 .promo__container .swiper-navigation .swiper-button::after {
+  display: none;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_4 {
+  background: url(../img/slide-4-bg-1920.jpg) bottom 0 right 0/cover no-repeat;
+  position: relative;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_4 .promo__label {
+  position: absolute;
+  gap: 11px;
+  min-height: 70px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_4 .promo__label .promo__label-text {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_4 .promo__label.promo__label_1 {
+  top: 55px;
+  right: 304px;
+  width: 300px;
+  height: 200px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_4 .promo__label.promo__label_1 .promo__img-wrap {
+  position: absolute;
+  width: 156px;
+  height: 156px;
+  overflow: hidden;
+  background: url(image.png);
+  mix-blend-mode: normal;
+  border: 3px solid #AD1818;
+  border-radius: 500px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_4 .promo__label.promo__label_1 .promo__label-text {
+  position: absolute;
+  bottom: 34px;
+  left: -12px;
+  display: grid;
+  place-items: center;
+  padding: 10px 14px;
+  position: absolute;
+  max-width: 80px;
+  min-height: 37px;
+  background: #AD1818;
+  border-radius: 50px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.94px;
+  text-align: left;
+  color: #fff;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_4 .promo__label.promo__label_1 .promo__arrow {
+  position: absolute;
+  bottom: 57px;
+  right: 55px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_4 .promo__container {
+  padding: 215px 0 50px;
+  position: relative;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 30px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_4 .promo__container .promo__title {
+  max-width: 780px;
+  font-family: Inter;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 63px;
+  text-align: left;
+  color: #303030;
+  text-transform: uppercase;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_4 .promo__container .promo__subtitle {
+  max-width: 780px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: #787878;
+  margin-bottom: 18px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_4 .promo__container .promo__btn {
+  max-width: 266px;
+  margin-bottom: 30px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_4 .promo__container .swiper-navigation {
+  position: relative;
+  width: max-content;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 15px;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_4 .promo__container .swiper-navigation .swiper-button {
+  position: relative;
+  top: initial;
+  left: initial;
+  right: initial;
+  bottom: initial;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  width: 49px;
+  height: 35px;
+  border: 1px solid #DC2F2F;
+  border-radius: 50px;
+  transition: border-color 0.3s ease-in-out;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_4 .promo__container .swiper-navigation .swiper-button svg path {
+  transition: stroke 0.3s ease-in-out;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_4 .promo__container .swiper-navigation .swiper-button:hover {
+  border-color: #b02626;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_4 .promo__container .swiper-navigation .swiper-button:hover svg path {
+  stroke: #b02626;
+}
+.glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_4 .promo__container .swiper-navigation .swiper-button::after {
+  display: none;
+}
 .glavnaya .glavnaya__main_top .banner {
   padding-bottom: 100px;
   grid-row: 1/2;
@@ -3181,132 +3662,6 @@ ul {
   height: 56px;
 }
 .glavnaya .glavnaya__main_top .apartments .swiper-navigation .swiper-button::after {
-  display: none;
-}
-.glavnaya .glavnaya__main_top .promo {
-  position: relative;
-}
-.glavnaya .glavnaya__main_top .promo .promo__container {
-  padding: 100px 0 95px;
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-columns: 826px 1fr;
-  gap: 43px;
-}
-@media (max-width: 1750px) {
-  .glavnaya .glavnaya__main_top .promo .promo__container {
-    padding: 103px 0 89px;
-  }
-}
-@media (max-width: 660px) {
-  .glavnaya .glavnaya__main_top .promo .promo__container {
-    padding: 110px 0 89px;
-  }
-}
-.glavnaya .glavnaya__main_top .promo .promo__container .promo__title {
-  grid-column: 2 span;
-}
-.glavnaya .glavnaya__main_top .promo .promo__container .promo__slider-wrap {
-  overflow: hidden;
-}
-.glavnaya .glavnaya__main_top .promo .promo__container .promo__slider-wrap .promo__list {
-  max-width: 826px;
-}
-.glavnaya .glavnaya__main_top .promo .promo__container .promo__slider-wrap .promo__list .promo__item {
-  padding: 0px;
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-columns: auto 1fr;
-  gap: 20px 15px;
-  align-content: start;
-  border-radius: 10px;
-}
-.glavnaya .glavnaya__main_top .promo .promo__container .promo__slider-wrap .promo__list .promo__item .promo__item-img {
-  grid-column: 2 span;
-  width: 100%;
-  aspect-ratio: 403/245;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.glavnaya .glavnaya__main_top .promo .promo__container .promo__slider-wrap .promo__list .promo__item .promo__item-img img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-.glavnaya .glavnaya__main_top .promo .promo__container .promo__slider-wrap .promo__list .promo__item .promo__item-date {
-  font-family: Inter;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16.94px;
-  text-align: left;
-  color: #8c8c8c;
-}
-.glavnaya .glavnaya__main_top .promo .promo__container .promo__slider-wrap .promo__list .promo__item .promo__item-period {
-  position: relative;
-  padding-left: 20px;
-}
-.glavnaya .glavnaya__main_top .promo .promo__container .promo__slider-wrap .promo__list .promo__item .promo__item-period svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.glavnaya .glavnaya__main_top .promo .promo__container .promo__slider-wrap .promo__list .promo__item .promo__item-title {
-  margin-top: -5px;
-  max-width: 330px;
-  grid-column: 2 span;
-  font-family: Inter;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24.2px;
-  text-align: left;
-  color: #363636;
-}
-.glavnaya .glavnaya__main_top .promo .promo__container .promo__link {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 1fr 55px;
-  align-items: center;
-  align-content: end;
-  gap: 40px;
-  padding: 50px;
-  background: #748d55;
-  border-radius: 10px;
-}
-.glavnaya .glavnaya__main_top .promo .promo__container .promo__link .promo__link-text {
-  font-family: Inter;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 38.73px;
-  text-align: left;
-  color: #ffffff;
-}
-.glavnaya .glavnaya__main_top .promo .swiper-navigation {
-  position: absolute;
-  bottom: 5px;
-  left: 100px;
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: end;
-  gap: 20px;
-  align-items: center;
-}
-.glavnaya .glavnaya__main_top .promo .swiper-navigation .swiper-button {
-  position: relative;
-  width: 56px;
-  height: 56px;
-  top: initial;
-  right: initial;
-  left: initial;
-  bottom: initial;
-  margin: 0;
-}
-.glavnaya .glavnaya__main_top .promo .swiper-navigation .swiper-button svg {
-  width: 56px;
-  height: 56px;
-}
-.glavnaya .glavnaya__main_top .promo .swiper-navigation .swiper-button::after {
   display: none;
 }
 .glavnaya .glavnaya__main_top .news {
