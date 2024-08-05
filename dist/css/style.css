@@ -2983,6 +2983,78 @@ ul {
 .glavnaya .promo .promo__slider-wrap .promo__list .promo__item.promo__item_4 .promo__container .swiper-navigation .swiper-button::after {
   display: none;
 }
+.glavnaya .why .why__container .why__title {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+@media (max-width: 1230px) {
+  .glavnaya .why .why__container .why__title {
+    margin-bottom: 27px;
+  }
+}
+.glavnaya .why .why__container .why__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+@media (max-width: 1230px) {
+  .glavnaya .why .why__container .why__list {
+    gap: 17px 20px;
+  }
+}
+@media (max-width: 660px) {
+  .glavnaya .why .why__container .why__list {
+    gap: 15px;
+  }
+}
+.glavnaya .why .why__container .why__list .why__item {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 15px;
+  padding: 20px;
+  max-width: 376px;
+  min-height: 223px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+@media (max-width: 660px) {
+  .glavnaya .why .why__container .why__list .why__item {
+    grid-auto-flow: initial;
+    grid-template: auto auto/1fr auto;
+    grid-template-areas: "a b" "c c";
+    align-content: start;
+    gap: 19px 50px;
+    min-height: 165px;
+  }
+}
+.glavnaya .why .why__container .why__list .why__item .why__item-img-wrap {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+@media (max-width: 660px) {
+  .glavnaya .why .why__container .why__list .why__item .why__item-img-wrap {
+    grid-area: b;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 0;
+  }
+}
+.glavnaya .why .why__container .why__list .why__item .why__item-title {
+  align-self: center;
+}
+@media (max-width: 660px) {
+  .glavnaya .why .why__container .why__list .why__item .why__item-title {
+    grid-area: a;
+  }
+}
+@media (max-width: 660px) {
+  .glavnaya .why .why__container .why__list .why__item .why__item-text {
+    grid-area: c;
+    letter-spacing: 0.8px;
+  }
+}
 .glavnaya .glavnaya__main_top .banner {
   padding-bottom: 100px;
   grid-row: 1/2;
