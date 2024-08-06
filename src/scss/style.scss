@@ -3443,6 +3443,8 @@ ul {
             position: relative;
 
             .catalog__item-slider-list {
+              overflow: hidden;
+              min-width: 0;
 
               .catalog__item-slider-item {
                 overflow: hidden;
@@ -3545,7 +3547,7 @@ ul {
 
             .catalog__item-list {
               .catalog__item-list-item {
-                
+
               }
             }
 
