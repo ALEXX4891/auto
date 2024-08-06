@@ -5648,110 +5648,113 @@ ul {
 }
 
 .company .about .about__container {
-  padding: 40px 0 100px;
   display: grid;
   grid-auto-flow: row;
-  gap: 40px;
+  gap: 30px;
+  padding: 40px 0 80px;
 }
-.company .about .about__container .about__top {
-  display: grid;
-  grid-template-columns: 1fr 292px;
-  grid-auto-flow: row;
-  gap: 40px;
-  align-items: center;
+@media (max-width: 1230px) {
+  .company .about .about__container {
+    padding: 40px 30px 80px;
+  }
 }
-.company .about .about__container .about__top .about__btn-wrapper {
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: end;
-  gap: 18px;
+@media (max-width: 660px) {
+  .company .about .about__container {
+    padding: 40px 15px 80px;
+    gap: 20px;
+  }
 }
-.company .about .about__container .about__top .about__btn-wrapper .about__btn {
-  padding: 16px 34px;
-  border-radius: 50px;
-  font-family: Inter;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 18px;
-  text-align: left;
-  background: transparent;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
-}
-.company .about .about__container .about__top .about__btn-wrapper .about__btn_green {
-  background: #56693e;
-  color: #fff;
-  border: 1px solid #56693e;
-  text-wrap: nowrap;
-  pointer-events: none;
-}
-.company .about .about__container .about__top .about__btn-wrapper .about__btn_white {
-  background: #fff;
-  color: #616161;
-  border: 1px solid #56693e;
-  text-wrap: nowrap;
-}
-.company .about .about__container .about__top .about__btn-wrapper .about__btn_white:hover {
-  background: #9abc6f;
-  border: 1px solid #9abc6f;
-  color: #fff;
+.company .about .about__container .about__title {
+  text-transform: uppercase;
 }
 .company .about .about__container .about__content {
   display: grid;
-  grid-auto-flow: row;
-  grid-template: auto 820px/1fr;
-  gap: 80px;
-}
-.company .about .about__container .about__content .about__content-top {
-  display: grid;
   grid-auto-flow: column;
-  align-items: end;
-  gap: 30px;
+  grid-template-columns: 1fr 570px;
+  gap: 66px;
 }
-.company .about .about__container .about__content .about__content-top .about__content-title {
-  font-family: Inter;
-  font-size: 80px;
+@media (max-width: 960px) {
+  .company .about .about__container .about__content {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+@media (max-width: 660px) {
+  .company .about .about__container .about__content {
+    gap: 37px;
+  }
+}
+.company .about .about__container .about__content .about__left {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 0px;
+}
+.company .about .about__container .about__content .about__left .about__text {
+  font-family: Lato;
+  font-size: 17px;
   font-weight: 400;
-  line-height: 96.82px;
+  line-height: 22px;
   text-align: left;
-  color: #56693e;
 }
-.company .about .about__container .about__content .about__content-top .about__content-text {
-  font-family: Inter;
+@media (max-width: 660px) {
+  .company .about .about__container .about__content .about__left .about__text {
+    line-height: 21px;
+  }
+}
+.company .about .about__container .about__content .about__left .about__text.about__text_top {
+  margin-bottom: 55px;
+}
+@media (max-width: 960px) {
+  .company .about .about__container .about__content .about__left .about__text.about__text_top {
+    margin-bottom: 27px;
+  }
+}
+.company .about .about__container .about__content .about__left .about__text.about__text_bot {
+  margin-bottom: 40px;
+}
+@media (max-width: 660px) {
+  .company .about .about__container .about__content .about__left .about__text.about__text_bot {
+    margin-bottom: 13px;
+  }
+}
+.company .about .about__container .about__content .about__left .about__subtitle {
+  font-family: Lato;
   font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
+  font-weight: 600;
+  line-height: 21.6px;
   text-align: left;
-  color: #363636;
+  margin-bottom: 14px;
 }
-.company .about .about__container .about__content .slider_swiper {
-  overflow: hidden;
-  position: relative;
+@media (max-width: 660px) {
+  .company .about .about__container .about__content .about__left .about__subtitle {
+    font-size: 16px;
+  }
 }
-.company .about .about__container .about__content .slider_swiper .slider__list {
-  height: 820px;
-  width: 100%;
+.company .about .about__container .about__content .about__left .about__list {
+  list-style-type: disc;
+  padding-left: 25px;
+  margin-bottom: 40px;
 }
-.company .about .about__container .about__content .slider_swiper .slider__list .slider__item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+.company .about .about__container .about__content .about__left .about__list .about__item {
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
 }
-.company .about .about__container .about__content .slider_swiper .swiper-button {
-  width: 55px;
-  height: 55px;
-  top: 53%;
-  translate: 0 -50%;
-  z-index: 1;
+.company .about .about__container .about__content .about__left .about__btn {
+  max-width: 231px;
 }
-.company .about .about__container .about__content .slider_swiper .swiper-button::after {
-  display: none;
+.company .about .about__container .about__content .about__right {
+  background: url(../img/about-img.jpg) center center/cover no-repeat;
+  height: 476px;
+  border-radius: 10px;
 }
-.company .about .about__container .about__content .slider_swiper .swiper-button-prev_slider {
-  left: 50px;
-}
-.company .about .about__container .about__content .slider_swiper .swiper-button-next_slider {
-  right: 50px;
+@media (max-width: 660px) {
+  .company .about .about__container .about__content .about__right {
+    height: 250px;
+  }
 }
 .company .standarts .standarts__container {
   padding: 0 0 40px;
