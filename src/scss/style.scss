@@ -6097,51 +6097,74 @@ ul {
 // --------------------------------------- GLAVNAYA end ---------------------------------------
 // --------------------------------------- 404 start ---------------------------------------
 .not-found-page {
-  display: grid;
-  grid-template: 1fr auto / 1fr;
-  min-height: 100vh;
+  // display: grid;
+  // grid-template: 1fr auto / 1fr;
+  // min-height: 100vh;
 
   .not-found {
     background: url(@img/404.png) center center / cover no-repeat;
 
     .not-found__container {
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-      padding: 60px 10px 100px;
+      display: grid;
+      grid-auto-flow: row;
+      justify-content: start;
+      justify-items: start;
+      gap: 24px;
+      padding: 64px 0 168px;
+
+      @media (max-width: 1230px) {
+        padding: 64px 30px 168px;
+        justify-content: center;
+        justify-items: center;
+      }
+
+      @media (max-width: 660px) {
+        padding: 64px 15px 168px;
+      }
 
       .not-found__img {
         font-family: Inter;
-        font-size: 280px;
+        font-size: 200px;
         font-weight: 600;
-        line-height: 308px;
-        text-align: left;
-        color: #56693e;
-        letter-spacing: -10px;
+        line-height: 220px;
+        text-align: left;        
+        color: #AD1818;
+
+        @media (max-width: 660px) {
+          font-size: 30vw;
+        }
       }
 
       .not-found__title {
-        //styleName: н2.2;
         font-family: Inter;
-        font-size: 40px;
-        font-weight: 500;
-        line-height: 48.41px;
-        text-align: center;
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 63px;
+        text-align: left;        
         color: #303030;
+        text-transform: uppercase;
+
+        @media (max-width: 660px) {
+          font-size: 7vw;
+        }
       }
 
       .not-found__text {
-        margin-bottom: 20px;
-        max-width: 690px;
-        //styleName: текст боди;
         font-family: Inter;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 400;
-        line-height: 23.2px;
-        text-align: center;
+        line-height: 25.2px;
+        text-align: left;        
         color: #5c5c5c;
+        max-width: 530px;
+
+        @media (max-width: 660px) {
+          font-size: 3vw;
+          text-align: center;    
+          line-height: 110%;
+
+
+        }
       }
 
       .not-found__btns-wrapper {
@@ -6152,9 +6175,19 @@ ul {
       }
 
       .btn {
-        width: 237px;
-        border-radius: 5px;
-        color: #fff;
+        display: grid;
+        place-items: center;
+        padding: 16px 36px;
+        width: max-content;
+        min-height: 51px;
+        border-radius: 100px;     
+        background: transparent;
+        border: 1.5px solid #DC2F2F;
+        color: #DC2F2F;
+
+        @media (max-width: 660px) {
+          font-size: 2.5vw;
+        }
       }
     }
   }
