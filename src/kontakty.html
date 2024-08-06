@@ -8,145 +8,82 @@
   @@include('./html/header.html', {})
 
   <main class="main">
-    <section class="section contacts-page__section">
+    <section class="section contacts-page__section top">
       <div class="container contacts-page__container">
-        <h1 class="contacts-page__title title title_40">
-          Контакты
-        </h1>
-      </div>
 
+        <h1 class="contacts-page__title title title_31">
+          КОНТАКТЫ
+        </h1>
 
         <div class="contacts-page__content">
-          <div class="contacts-page__left-block">
+          <ul class="contacts-page__contacts-list">
 
-            <div class="contacts-page__left-wrap">
-              <div class="address__wrapper">
-  
-                <div class="address__item address__item_office">
-                  <h2 class="address__item-title title title_25">
-                    Главный офис
-                  </h2>
-                  <p class="address__time">
-                    Ежедневно с 10:00-17:00 
-                  </p>
-                </div>
-  
-                <div class="address__item address__item_address">
-                  <p class="address__item-title">
-                    Адрес:
-                  </p>
-                  <p class="address__item-text">
-                    Тюмень, ул. Клары Цеткин, д. 61, к2
-                  </p>
-
-                  <button class="address__link">
-                    Показать на карте
-                  </button>
-                </div>
-  
-                <div class="address__item address__item_phone">
-                  <p class="address__item-title">
-                    Телефон:
-                  </p>
-                  <a class="address__item-text" href="tel: 8 (3452) 611-157">
-                    8 (3452) 611-157
-                  </a>
-                </div>
-  
-                <div class="address__item address__item_mail">
-                  <p class="address__item-title">
-                    Почта:
-                  </p>
-                  <a class="address__item-text" href="mailto: hello_sibir@yandex.ru">
-                    hello_sibir@yandex.ru
-                  </a>
-                </div>
-                <button class="address__item-btn address__item-btn_minus">
-                  <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M29 15.5L1 15.5" stroke="black" stroke-width="1.5" />
-                  </svg>
-                </button>
-  
-                <button class="address__item-btn address__item-btn_plus">
-                  <svg width="28" height="31" viewBox="0 0 28 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13.7544 0.5V15.5M13.7544 30.5V15.5M13.7544 15.5H0H28" stroke="black" stroke-width="1.5" />
-                  </svg>
-                </button>
-  
-              </div>
-  
-              <div class="address__wrapper address__wrapper_close">
-              <!-- <div class="address__wrapper address__wrapper_close address__wrapper_disabled"> -->
-
-                <div class="address__item address__item_office">
-                  <h2 class="address__item-title title title_25">
-                    Офис продаж «Сосновый»
-                  </h2>
-                  <p class="address__time">
-                    Скоро открытие
-                  </p>
-                </div>
-
-                <div class="address__item address__item_address">
-                  <p class="address__item-title">
-                    Адрес:
-                  </p>
-                  <p class="address__item-text">
-                    Тюмень, ул. Клары Цеткин, д. 61, к2
-                  </p>
-                </div>
-  
-                <div class="address__item address__item_phone">
-                  <p class="address__item-title">
-                    Телефон:
-                  </p>
-                  <a class="address__item-text" href="tel: 8 (3452) 611-157">
-                    8 (3452) 611-157
-                  </a>
-                </div>
-  
-                <div class="address__item address__item_mail">
-                  <p class="address__item-title">
-                    Почта:
-                  </p>
-                  <a class="address__item-text" href="mailto: hello_sibir@yandex.ru">
-                    hello_sibir@yandex.ru
-                  </a>
-                </div>
-
-                <button class="address__item-btn address__item-btn_minus">
-                  <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M29 15.5L1 15.5" stroke="black" stroke-width="1.5" />
-                  </svg>
-                </button>
-  
-                <button class="address__item-btn address__item-btn_plus">
-                  <svg width="28" height="31" viewBox="0 0 28 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13.7544 0.5V15.5M13.7544 30.5V15.5M13.7544 15.5H0H28" stroke="black" stroke-width="1.5" />
-                  </svg>
-                </button>
-              </div>
-            </div>            
-
-            <div class="address__btn-wrap">
-              <h4 class="address__btn-title title title_25">
-                Остались вопросы?
-              </h4>
-              <p class="address__btn-desc">
-                Отправьте заявку и мы свяжемся с вами для уточнения деталей 
-              </p>
-              <button class="address__btn popup-link" href="#popup-form">
-                Оставить заявку
+            <li class="contacts-page__contact">
+              <h6 class="contacts-page__contacts-title">
+                Телефон
+              </h6>
+              <a href="tel:8 982 132 90 90" class="contacts__item contacts__item_phone">8 982 132 90 90</a>
+              <button class="contacts__item contacts__item_call-btn popup-link" href="#popup-form">
+                Заказать звонок
               </button>
-            </div>
-          </div>
+            </li>
 
-          <div class="contacts-page__right-block">
-            <div class="contacts-page__map" id="map">
-            </div>
-          </div>
+            <li class="contacts-page__contact">
+              <h6 class="contacts-page__contacts-title">
+                E-mail
+              </h6>
+              <a href="mailto:sell@automaster.one" class="contacts__item contacts__item_email">
+                sell@automaster.one
+              </a>
 
+            </li>
+          </ul>
+          <h3 class="contacts-page__title title title_20">
+            Доставка по всей России
+          </h3>
+          <p class="contacts-page__text text text_15">
+            С помощью СДЭК или другой доступной транспортной компанией отправляем заказы по всей России. Стоимость
+            доставки не входит в цену заказа, и оплачивается покупателем при получении в пункте выдачи.
+          </p>
+          <div class="contacts-page__map">
+
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section contacts-page__section bot">
+      <div class="container contacts-page__container">
+
+        <div class="docs__form-wrap">
+          <h2 class="docs__form-title">
+            Заказать звонок
+          </h2>
+          <p class="docs__form-text text text_16">
+            Отправьте заявку и наш менеджер свяжется с вами
+          </p>
+
+          <form action="" class="docs__form form" id="docs-form">
+            <fieldset class="form__fieldset">
+              <input type="text" class="form__input form__input_name" placeholder="Имя">
+              <input id="phone_1" type="tel" class="form__input form__input_phone" placeholder="Телефон">
+              <div class="form__submit-wrap">
+                <button type="submit" class="form__submit">
+                  Отправить
+                </button>
+                <div class="form__agreement-wrap">
+                  <span class="form__agreement-text">
+                    Нажимая кнопку «Отправить», я соглашаюсь с
+                  </span>
+                  <a class="form__agreement-link" href="agreement.html" target="_blank">
+                    условиями обработки персональных данных
+                  </a>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 
