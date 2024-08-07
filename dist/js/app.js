@@ -1748,14 +1748,14 @@ if (burger) {
     console.log("тест");
     burger.classList.add("burger_active");
     closeBtn.classList.add("burger__close-btn_active");
-    headerNav.classList.toggle("nav_active");
+    // headerNav.classList.toggle("nav_active");
   });
 
   document.addEventListener("click", function (e) {
     console.log("тест-глобальный");
     if (!e.target.closest(".header__nav") && !e.target.closest(".burger")) {
       burger.classList.remove("burger_active");
-      headerNav.classList.remove("nav_active");
+      // headerNav.classList.remove("nav_active");
     }
   });
 }
