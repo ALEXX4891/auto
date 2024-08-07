@@ -638,7 +638,7 @@ new Swiper(".promo_swiper", {
   },
 });
 
-new Swiper(".catalog-item-swiper", {
+new Swiper(".catalog__item-slider", {
   // Optional parameters
   direction: "horizontal",
   // loop: true,
@@ -649,7 +649,7 @@ new Swiper(".catalog-item-swiper", {
   // centeredSlides: true, //выравнивание слайдов по центру
   // initialSlide: 0, //начальный слайд (c нуля)
 
-  // spaceBetween: 20,
+  spaceBetween: 20,
   // slideToClickedSlide: true, //перелистывание слайдов по клику
   // grabCursor: true, //меняет курсор при наведении на руку
   // watchOverflow: true, //отключает слайдер если все слайды входят в область видимости
@@ -1446,291 +1446,291 @@ if (catalog) {
 // -------------------------------------------- start OWL: ---------------------------------------------
 // let margin = 16;
 
-jQuery(($) => {
-  if ($(window).width() <= 768) {
-    margin = 13;
-  }
-});
-// console.log(window.screen.width / 340);
+// jQuery(($) => {
+//   if ($(window).width() <= 768) {
+//     margin = 13;
+//   }
+// });
+// // console.log(window.screen.width / 340);
 
-jQuery(($) => {
-  if ($(window).width() > 0) {
-    $(".owl-carousel-index").owlCarousel({
-      // screenLeft:true,
-      // startPosition: 1,
+// jQuery(($) => {
+//   if ($(window).width() > 0) {
+//     $(".owl-carousel-index").owlCarousel({
+//       // screenLeft:true,
+//       // startPosition: 1,
 
-      loop: false,
-      // center: true,
-      margin: 20,
-      items: 4,
-      nav: true,
-      // navText : ["<i class='fa fa-chevron-left'>>>>></i>","<i class='fa fa-chevron-right'><<<<<<<</i>"],
-      dots: false,
-      singleItem: false,
-      autoplay: false,
-      smartSpeed: 1000,
-      // autowidth: true,
-      autoplayTimeout: 5000,
-      stagePadding: 104, // позволяет задать начальное положение первого слайда
-      responsive: {
-        0: {
-          items: 1,
-          stagePadding: 15,
-          margin: 5,
+//       loop: false,
+//       // center: true,
+//       margin: 20,
+//       items: 4,
+//       nav: true,
+//       // navText : ["<i class='fa fa-chevron-left'>>>>></i>","<i class='fa fa-chevron-right'><<<<<<<</i>"],
+//       dots: false,
+//       singleItem: false,
+//       autoplay: false,
+//       smartSpeed: 1000,
+//       // autowidth: true,
+//       autoplayTimeout: 5000,
+//       stagePadding: 104, // позволяет задать начальное положение первого слайда
+//       responsive: {
+//         0: {
+//           items: 1,
+//           stagePadding: 15,
+//           margin: 5,
 
-          // nav: false,
-          // items: window.screen.width / 360,
-        },
-        350: {
-          items: 1,
-          stagePadding: 15,
-          margin: 5,
+//           // nav: false,
+//           // items: window.screen.width / 360,
+//         },
+//         350: {
+//           items: 1,
+//           stagePadding: 15,
+//           margin: 5,
 
-          // nav: false,
-          // items: window.screen.width / 360,
-        },
-        570: {
-          items: 1,
-          stagePadding: 30,
-          margin: 10,
-          singleItem: true,
+//           // nav: false,
+//           // items: window.screen.width / 360,
+//         },
+//         570: {
+//           items: 1,
+//           stagePadding: 30,
+//           margin: 10,
+//           singleItem: true,
 
-          // nav: false,
-          // items: window.screen.width / 360,
-        },
-        760: {
-          items: 2,
-          stagePadding: 30,
-          margin: 5,
+//           // nav: false,
+//           // items: window.screen.width / 360,
+//         },
+//         760: {
+//           items: 2,
+//           stagePadding: 30,
+//           margin: 5,
 
-          // nav: false,
-          // items: window.screen.width / 360,
-        },
-        1280: {
-          items: 2.5,
-          stagePadding: 30,
-          // nav: false,
-          // items: window.screen.width / 420,
-        },
-        1460: {
-          items: 3,
-          stagePadding: 116,
-        },
-        1920: {
-          items: 4,
-        },
-      },
-    });
+//           // nav: false,
+//           // items: window.screen.width / 360,
+//         },
+//         1280: {
+//           items: 2.5,
+//           stagePadding: 30,
+//           // nav: false,
+//           // items: window.screen.width / 420,
+//         },
+//         1460: {
+//           items: 3,
+//           stagePadding: 116,
+//         },
+//         1920: {
+//           items: 4,
+//         },
+//       },
+//     });
 
-    // $(".owl-carousel-index").owlCarousel({
-    //   loop: false,
-    //   center: true,
-    //   margin: 20,
-    //   // items: 4.5,
-    //   nav: true,
-    //   // navText : ["<i class='fa fa-chevron-left'>>>>></i>","<i class='fa fa-chevron-right'><<<<<<<</i>"],
-    //   dots: false,
-    //   singleItem: false,
-    //   autoplay: false,
-    //   smartSpeed: 1000,
-    //   autoplayTimeout: 5000,
-    //   responsive: {
-    //     0: {
-    //       nav: false,
-    //       items: 1,
-    //     },
-    //     800: {
-    //       nav: false,
-    //       items: 1,
-    //     },
-    //     1200: {
-    //       items: 1,
-    //     },
-    //   },
-    // });
+//     // $(".owl-carousel-index").owlCarousel({
+//     //   loop: false,
+//     //   center: true,
+//     //   margin: 20,
+//     //   // items: 4.5,
+//     //   nav: true,
+//     //   // navText : ["<i class='fa fa-chevron-left'>>>>></i>","<i class='fa fa-chevron-right'><<<<<<<</i>"],
+//     //   dots: false,
+//     //   singleItem: false,
+//     //   autoplay: false,
+//     //   smartSpeed: 1000,
+//     //   autoplayTimeout: 5000,
+//     //   responsive: {
+//     //     0: {
+//     //       nav: false,
+//     //       items: 1,
+//     //     },
+//     //     800: {
+//     //       nav: false,
+//     //       items: 1,
+//     //     },
+//     //     1200: {
+//     //       items: 1,
+//     //     },
+//     //   },
+//     // });
 
-    $(".owl-carousel-slider").owlCarousel({
-      loop: false,
-      margin: 20,
-      nav: true,
-      dots: false,
-      autoplay: false,
-      smartSpeed: 1000,
-      autoplayTimeout: 5000,
-      responsive: {
-        //Адаптация в зависимости от разрешения экрана
-        0: {
-          items: 1,
-        },
-        600: {
-          items: 1,
-        },
-        1000: {
-          items: 1,
-        },
-      },
-    });
+//     $(".owl-carousel-slider").owlCarousel({
+//       loop: false,
+//       margin: 20,
+//       nav: true,
+//       dots: false,
+//       autoplay: false,
+//       smartSpeed: 1000,
+//       autoplayTimeout: 5000,
+//       responsive: {
+//         //Адаптация в зависимости от разрешения экрана
+//         0: {
+//           items: 1,
+//         },
+//         600: {
+//           items: 1,
+//         },
+//         1000: {
+//           items: 1,
+//         },
+//       },
+//     });
 
-    // $(".owl-carousel-about").owlCarousel({
-    //   loop: false,
-    //   margin: 16,
-    //   items: 4,
-    //   nav: true,
-    //   // navText : ["<i class='fa fa-chevron-left'>>>>></i>","<i class='fa fa-chevron-right'><<<<<<<</i>"],
-    //   dots: false,
-    //   singleItem: false,
-    //   autoplay: false,
-    //   smartSpeed: 1000,
-    //   autoplayTimeout: 5000,
-    //   responsive: {
-    //     0: {
-    //       nav: false,
-    //       margin: 5,
-    //       items: 1,
+//     // $(".owl-carousel-about").owlCarousel({
+//     //   loop: false,
+//     //   margin: 16,
+//     //   items: 4,
+//     //   nav: true,
+//     //   // navText : ["<i class='fa fa-chevron-left'>>>>></i>","<i class='fa fa-chevron-right'><<<<<<<</i>"],
+//     //   dots: false,
+//     //   singleItem: false,
+//     //   autoplay: false,
+//     //   smartSpeed: 1000,
+//     //   autoplayTimeout: 5000,
+//     //   responsive: {
+//     //     0: {
+//     //       nav: false,
+//     //       margin: 5,
+//     //       items: 1,
 
-    //       // items: window.screen.width / 360,
-    //     },
-    //     400: {
-    //       nav: false,
-    //       margin: 5,
+//     //       // items: window.screen.width / 360,
+//     //     },
+//     //     400: {
+//     //       nav: false,
+//     //       margin: 5,
 
-    //       items: 1.3,
+//     //       items: 1.3,
 
-    //       // items: window.screen.width / 360,
-    //     },
-    //     520: {
-    //       nav: false,
-    //       margin: 5,
+//     //       // items: window.screen.width / 360,
+//     //     },
+//     //     520: {
+//     //       nav: false,
+//     //       margin: 5,
 
-    //       items: 1.7,
+//     //       items: 1.7,
 
-    //       // items: window.screen.width / 360,
-    //     },
-    //     650: {
-    //       nav: false,
-    //       items: 2.2,
+//     //       // items: window.screen.width / 360,
+//     //     },
+//     //     650: {
+//     //       nav: false,
+//     //       items: 2.2,
 
-    //       // items: window.screen.width / 360,
-    //     },
-    //     800: {
-    //       nav: false,
-    //       items: 2.5,
-    //       // items: window.screen.width / 420,
-    //     },
-    //     900: {
-    //       nav: false,
-    //       items: 3,
-    //       // items: window.screen.width / 420,
-    //     },
-    //     1200: {
-    //       nav: false,
-    //       items: 4,
-    //     },
-    //     1350: {
-    //       items: 4,
-    //     },
-    //   },
-    // });
+//     //       // items: window.screen.width / 360,
+//     //     },
+//     //     800: {
+//     //       nav: false,
+//     //       items: 2.5,
+//     //       // items: window.screen.width / 420,
+//     //     },
+//     //     900: {
+//     //       nav: false,
+//     //       items: 3,
+//     //       // items: window.screen.width / 420,
+//     //     },
+//     //     1200: {
+//     //       nav: false,
+//     //       items: 4,
+//     //     },
+//     //     1350: {
+//     //       items: 4,
+//     //     },
+//     //   },
+//     // });
 
-    // $(".owl-carousel-index").owlCarousel({
-    //   loop: false,
-    //   margin: 16,
-    //   // autoWidth:true,
-    //   items: 4,
-    //   nav: true,
-    //   // navText : ["<i class='fa fa-chevron-left'>>>>></i>","<i class='fa fa-chevron-right'><<<<<<<</i>"],
-    //   dots: false,
-    //   singleItem: false,
-    //   autoplay: false,
-    //   smartSpeed: 1000,
-    //   autoplayTimeout: 5000,
-    //   stagePadding: 104, // позволяет задать начальное положение первого слайда
-    //   responsive: {
-    //     0: {
-    //       nav: false,
-    //       // margin: 5,
-    //       items: 4,
-    //       margin: 13,
-    //     },
-    //     600: {
-    //       nav: false,
-    //       items: 4,
-    //       margin: 15,
-    //     },
-    //     1050: {
-    //       items: 4,
-    //     },
-    //   },
-    // });
+//     // $(".owl-carousel-index").owlCarousel({
+//     //   loop: false,
+//     //   margin: 16,
+//     //   // autoWidth:true,
+//     //   items: 4,
+//     //   nav: true,
+//     //   // navText : ["<i class='fa fa-chevron-left'>>>>></i>","<i class='fa fa-chevron-right'><<<<<<<</i>"],
+//     //   dots: false,
+//     //   singleItem: false,
+//     //   autoplay: false,
+//     //   smartSpeed: 1000,
+//     //   autoplayTimeout: 5000,
+//     //   stagePadding: 104, // позволяет задать начальное положение первого слайда
+//     //   responsive: {
+//     //     0: {
+//     //       nav: false,
+//     //       // margin: 5,
+//     //       items: 4,
+//     //       margin: 13,
+//     //     },
+//     //     600: {
+//     //       nav: false,
+//     //       items: 4,
+//     //       margin: 15,
+//     //     },
+//     //     1050: {
+//     //       items: 4,
+//     //     },
+//     //   },
+//     // });
 
-    // $(".owl-carousel-news-item").owlCarousel({
-    //   loop: false,
-    //   margin: 16,
-    //   // autoWidth:true,
-    //   items: 3,
-    //   nav: true,
-    //   // navText : ["<i class='fa fa-chevron-left'>>>>></i>","<i class='fa fa-chevron-right'><<<<<<<</i>"],
-    //   dots: false,
-    //   singleItem: false,
-    //   autoplay: false,
-    //   smartSpeed: 1000,
-    //   autoplayTimeout: 5000,
-    //   responsive: {
-    //     0: {
-    //       nav: false,
-    //       // margin: 5,
-    //       items: 1,
-    //       autoWidth: true,
+//     // $(".owl-carousel-news-item").owlCarousel({
+//     //   loop: false,
+//     //   margin: 16,
+//     //   // autoWidth:true,
+//     //   items: 3,
+//     //   nav: true,
+//     //   // navText : ["<i class='fa fa-chevron-left'>>>>></i>","<i class='fa fa-chevron-right'><<<<<<<</i>"],
+//     //   dots: false,
+//     //   singleItem: false,
+//     //   autoplay: false,
+//     //   smartSpeed: 1000,
+//     //   autoplayTimeout: 5000,
+//     //   responsive: {
+//     //     0: {
+//     //       nav: false,
+//     //       // margin: 5,
+//     //       items: 1,
+//     //       autoWidth: true,
 
-    //       // margin: 13,
-    //     },
-    //     410: {
-    //       nav: false,
-    //       // margin: 5,
-    //       items: 1.17,
-    //       // margin: 13,
-    //     },
-    //     425: {
-    //       nav: false,
-    //       // margin: 5,
-    //       items: 1.2,
-    //       // margin: 13,
-    //     },
-    //     530: {
-    //       nav: false,
-    //       // margin: 5,
-    //       items: 1.5,
-    //       // margin: 13,
-    //     },
-    //     600: {
-    //       nav: false,
-    //       // margin: 5,
-    //       items: 1.7,
-    //       // margin: 13,
-    //     },
-    //     750: {
-    //       nav: false,
-    //       // margin: 5,
-    //       items: 2.15,
-    //       // margin: 13,
-    //     },
-    //     950: {
-    //       nav: false,
-    //       items: 2.4,
-    //       // margin: 15,
-    //     },
-    //     1050: {
-    //       nav: false,
-    //       items: 2.7,
-    //       // margin: 15,
-    //     },
-    //     1180: {
-    //       items: 3,
-    //     },
-    //   },
-    // });
-  }
-});
+//     //       // margin: 13,
+//     //     },
+//     //     410: {
+//     //       nav: false,
+//     //       // margin: 5,
+//     //       items: 1.17,
+//     //       // margin: 13,
+//     //     },
+//     //     425: {
+//     //       nav: false,
+//     //       // margin: 5,
+//     //       items: 1.2,
+//     //       // margin: 13,
+//     //     },
+//     //     530: {
+//     //       nav: false,
+//     //       // margin: 5,
+//     //       items: 1.5,
+//     //       // margin: 13,
+//     //     },
+//     //     600: {
+//     //       nav: false,
+//     //       // margin: 5,
+//     //       items: 1.7,
+//     //       // margin: 13,
+//     //     },
+//     //     750: {
+//     //       nav: false,
+//     //       // margin: 5,
+//     //       items: 2.15,
+//     //       // margin: 13,
+//     //     },
+//     //     950: {
+//     //       nav: false,
+//     //       items: 2.4,
+//     //       // margin: 15,
+//     //     },
+//     //     1050: {
+//     //       nav: false,
+//     //       items: 2.7,
+//     //       // margin: 15,
+//     //     },
+//     //     1180: {
+//     //       items: 3,
+//     //     },
+//     //   },
+//     // });
+//   }
+// });
 
 // -------------------------------------------- end OWL ---------------------------------------------
 

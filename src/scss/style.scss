@@ -3441,10 +3441,10 @@ ul {
             width: 100%;
             height: 100%;
             position: relative;
-
+            min-width: 0;
+            overflow: hidden;
+            
             .catalog__item-slider-list {
-              overflow: hidden;
-              min-width: 0;
 
               .catalog__item-slider-item {
                 overflow: hidden;
@@ -3471,7 +3471,7 @@ ul {
               top: 86%;
               left: 50%;
               transform: translate(-50%, -50%);
-              width: 104%;
+              width: 101%;
               z-index: 1000;
               // height: max-content;
               display: grid;

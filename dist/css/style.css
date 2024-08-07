@@ -2958,10 +2958,8 @@ ul {
   width: 100%;
   height: 100%;
   position: relative;
-}
-.glavnaya .catalog .catalog__container .catalog__list .catalog__item .catalog__item-slider .catalog__item-slider-list {
-  overflow: hidden;
   min-width: 0;
+  overflow: hidden;
 }
 .glavnaya .catalog .catalog__container .catalog__list .catalog__item .catalog__item-slider .catalog__item-slider-list .catalog__item-slider-item {
   overflow: hidden;
@@ -2981,7 +2979,7 @@ ul {
   top: 86%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 104%;
+  width: 101%;
   z-index: 1000;
   display: grid;
   grid-auto-flow: column;
