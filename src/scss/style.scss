@@ -3628,6 +3628,16 @@ ul {
                 transform: translate(-50%, -50%) scale(1.35);
                 transform: translate(-50%, -50%);
 
+                @media (max-width: 660px) {
+                  object-fit: contain;
+                  object-position: center;
+                  transform: initial;
+                  position: initial;
+                  top: initial;
+                  left: initial;
+
+                }
+
                 
                 // width: 250px;
                 // height: 250px;

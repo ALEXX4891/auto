@@ -3104,6 +3104,16 @@ ul {
   transform: translate(-50%, -50%) scale(1.35);
   transform: translate(-50%, -50%);
 }
+@media (max-width: 660px) {
+  .glavnaya .catalog .catalog__container .catalog__list .catalog__item .catalog__item-img-wrap .catalog__item-img img {
+    object-fit: contain;
+    object-position: center;
+    transform: initial;
+    position: initial;
+    top: initial;
+    left: initial;
+  }
+}
 .glavnaya .catalog .catalog__container .catalog__list .catalog__item .catalog__item-img-wrap .swiper-navigation {
   position: absolute;
   bottom: 1%;
