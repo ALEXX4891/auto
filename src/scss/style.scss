@@ -210,6 +210,7 @@ ul {
   cursor: pointer;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
     border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  
 
   @media (max-width: 660px) {
     font-family: Inter;
@@ -249,13 +250,18 @@ ul {
     max-width: 114px;
     min-height: 55px;
     border: none;
-    background: linear-gradient(90deg, #dc2f2f -39.45%, #ad1818 131.86%);
+    background: #C32323;
+    // background: linear-gradient(90deg, #DC2F2F -39.45%, #AD1818 131.86%);
     color: #ffffff;
-
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    
     &:hover {
       color: #ffffff;
-      background: linear-gradient(90deg, #dc2f2f -39.45%, #ad1818 131.86%),
-        linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+      background: #9D1C1C;
+      // background: 
+      //   linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+      //   linear-gradient(90deg, #DC2F2F -39.45%, #AD1818 131.86%);
+
     }
   }
 
@@ -3542,17 +3548,35 @@ ul {
               line-height: 18.15px;
               text-align: left;
               color: #7D7D7D;
+              margin-bottom: 15px;
   
             }
 
             .catalog__item-list {
+              padding-left: 25px;
+              margin-bottom: 6px;
+              // list-style-position: inside;
+              
               .catalog__item-list-item {
+              // display:list-item;
+              // list-style-position:outside;
+              list-style-type: disc;
+                font-family: Inter;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 17.15px;
+                text-align: left;
+                color: #7D7D7D;
 
               }
             }
 
           }
           .catalog__item-price-wrap {
+            display: grid;
+            grid-auto-flow: column;
+            gap: 15px;
+            justify-items: start;
             .catalog__item-price {
               font-family: Inter;
               font-size: 25px;
@@ -3574,6 +3598,9 @@ ul {
             }
           }
           .catalog__item-btn {
+            max-width: 100%;
+            justify-self: center;
+
           }
         }
       }
@@ -6845,10 +6872,10 @@ ul {
 
             .about__item {
               font-family: Lato;
-font-size: 15px;
-font-weight: 400;
-line-height: 21px;
-text-align: left;
+              font-size: 15px;
+              font-weight: 400;
+              line-height: 21px;
+              text-align: left;
 
             }
           }

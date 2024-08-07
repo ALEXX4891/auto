@@ -261,12 +261,13 @@ ul {
   max-width: 114px;
   min-height: 55px;
   border: none;
-  background: linear-gradient(90deg, #dc2f2f -39.45%, #ad1818 131.86%);
+  background: #C32323;
   color: #ffffff;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .btn.btn_gradient:hover {
   color: #ffffff;
-  background: linear-gradient(90deg, #dc2f2f -39.45%, #ad1818 131.86%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  background: #9D1C1C;
 }
 .btn.btn_disabled {
   opacity: 0.5px;
@@ -3034,6 +3035,26 @@ ul {
   line-height: 18.15px;
   text-align: left;
   color: #7D7D7D;
+  margin-bottom: 15px;
+}
+.glavnaya .catalog .catalog__container .catalog__list .catalog__item .catalog__item-text-wrap .catalog__item-list {
+  padding-left: 25px;
+  margin-bottom: 6px;
+}
+.glavnaya .catalog .catalog__container .catalog__list .catalog__item .catalog__item-text-wrap .catalog__item-list .catalog__item-list-item {
+  list-style-type: disc;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17.15px;
+  text-align: left;
+  color: #7D7D7D;
+}
+.glavnaya .catalog .catalog__container .catalog__list .catalog__item .catalog__item-price-wrap {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 15px;
+  justify-items: start;
 }
 .glavnaya .catalog .catalog__container .catalog__list .catalog__item .catalog__item-price-wrap .catalog__item-price {
   font-family: Inter;
@@ -3052,6 +3073,10 @@ ul {
   text-decoration-line: line-through;
   color: #A3A3A3;
   align-self: end;
+}
+.glavnaya .catalog .catalog__container .catalog__list .catalog__item .catalog__item-btn {
+  max-width: 100%;
+  justify-self: center;
 }
 .glavnaya .docs .docs__container {
   display: grid;
