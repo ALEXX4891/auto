@@ -63,10 +63,13 @@
             Отправьте заявку и наш менеджер свяжется с вами
           </p>
 
-          <form action="" class="docs__form form" id="docs-form">
+          <form action="#" class="docs__form form main-form" enctype="multipart/form-data">
             <fieldset class="form__fieldset">
-              <input type="text" class="form__input form__input_name" placeholder="Имя">
-              <input id="phone_1" type="tel" class="form__input form__input_phone" placeholder="Телефон">
+              <input type="text" class="form__input form__input_name _req" name="name" placeholder="Имя">
+              <input id="phone_1" type="tel" class="form__input form__input_phone _req" name="phone" placeholder="Телефон">
+              <span class="form__error">
+                Заполните обязательные поля, чтобы продолжить
+              </span>
               <div class="form__submit-wrap">
                 <button type="submit" class="form__submit">
                   Отправить
