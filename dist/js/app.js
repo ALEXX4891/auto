@@ -331,11 +331,11 @@ if (burger) {
   // const mobMenu = mobMenuWrap.querySelector(".header__mob-menu");
   // const mobMenuWrap = document.querySelector(".header__mob-menu-wrap");
 
-  const closeBtn = document.querySelector(".burger__close-btn");
+  // const closeBtn = document.querySelector(".burger__close-btn");
   burger.addEventListener("click", function (e) {
     console.log("тест");
-    burger.classList.add("burger_active");
-    closeBtn.classList.add("burger__close-btn_active");
+    // burger.classList.add("burger_active");
+    // closeBtn.classList.add("burger__close-btn_active");
     // headerNav.classList.toggle("nav_active");
   });
 

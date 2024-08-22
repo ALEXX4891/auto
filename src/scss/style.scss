@@ -303,159 +303,6 @@ ul {
   }
 }
 
-// .form {
-//   // box-sizing: border-box;
-//   width: 100%;
-//   height: 100%;
-//   display: grid;
-//   grid-template-columns: 100%;
-//   grid-template-rows: 10% 17% 40% 20% 9%;
-//   gap: 1%;
-//   // justify-content: center;
-//   // flex-direction: column;
-//   align-items: start;
-//   justify-content: start;
-//   padding: 50px;
-//   // gap: 60px;
-
-//   // width: 544px;
-//   // height: 672px;
-
-//   background: #ffffff;
-//   border-radius: 10px;
-
-//   @media (max-width: 900px) {
-//     padding: 30px;
-//     grid-template-rows: 8% 11% 49% 18% 6%;
-//     gap: 2%;
-//   }
-
-//   @media (max-width: 660px) {
-//     grid-template-rows: 6% 13% 47% 15% 13%;
-//     padding: 20px;
-//   }
-
-//   .form__title {
-//     font-family: Inter;
-//     font-size: 40px;
-//     font-weight: 400;
-//     line-height: 48.41px;
-//     text-align: left;
-
-//     @media (max-width: 900px) {
-//       font-family: Inter;
-//       font-size: 30px;
-//       font-weight: 400;
-//       line-height: 36.31px;
-//       text-align: left;
-//     }
-
-//     @media (max-width: 660px) {
-//       font-size: 22px;
-//       line-height: 27.31px;
-//     }
-//   }
-//   .form__desc {
-//     max-width: 75%;
-//     font-family: Inter;
-//     font-size: 16px;
-//     font-weight: 400;
-//     line-height: 22.4px;
-//     text-align: left;
-
-//     @media (max-width: 660px) {
-//       font-size: 14px;
-//       max-width: 100%;
-//     }
-//   }
-
-//   .form__label-block {
-//     width: 100%;
-//     height: 100%;
-//     display: grid;
-//     grid-template-columns: 1fr;
-//     grid-template-rows: repeat(3, 1fr);
-//     gap: 20px;
-
-//     @media (max-width: 900px) {
-//       gap: 30px;
-//     }
-
-//     @media (max-width: 660px) {
-//       // gap: 20px;
-//     }
-
-//     .form__label {
-//       display: grid;
-//       grid-template-columns: max-content 1fr;
-//       grid-template-rows: 1fr 2fr;
-//       justify-items: start;
-//       align-items: start;
-//       gap: 5px 0;
-
-//       font-family: Inter;
-//       font-size: 14px;
-//       font-weight: 400;
-
-//       border-bottom: 1px solid #a9a9a9;
-
-//       .form__label-text {
-//         grid-row: 1/1;
-//         color: #bababa;
-//       }
-
-//       .form__label-star {
-//         grid-row: 1/1;
-//         color: #363636;
-//       }
-
-//       .form__input {
-//         grid-column: span 2;
-//         width: 100%;
-//         line-height: 37px;
-//         &::placeholder {
-//           font-size: 16px;
-//           color: #363636;
-//         }
-//       }
-//     }
-//   }
-
-//   .form__btn {
-//     align-self: end;
-//     width: 100%;
-//     height: 60px;
-
-//     @media (max-width: 900px) {
-//       font-size: 15px;
-//     }
-//     @media (max-width: 660px) {
-//       height: 46px;
-//     }
-//   }
-
-//   .form__agreement-wrap {
-//     align-self: end;
-
-//     font-family: Inter;
-//     font-size: 14px;
-//     font-weight: 400;
-//     line-height: 19.6px;
-//     text-align: left;
-
-//     @media (max-width: 660px) {
-//       font-size: 13px;
-//     }
-
-//     .form__agreement-text {
-//       color: #a9a9a9;
-//     }
-//     .form__agreement-link {
-//       color: #363636;
-//     }
-//   }
-// }
-
 .title {
   &.title_18 {
     font-family: Inter;
@@ -1055,7 +902,109 @@ ul {
     }
   }
 
+  &.popup-menu {
 
+    .popup__body {
+      justify-content: end;
+      
+      .popup__content {
+        max-width: 310px;
+        border-radius: initial;
+
+        height: 100vh;
+
+        display: grid;
+        // grid-auto-flow: row;
+        grid-template-rows: auto auto auto 1fr auto;
+        justify-content: start;
+        // align-content: start;
+        gap: 30px;
+
+        .popup__close {
+          position: relative;
+          top: initial;
+          left: initial;
+          justify-self: end;
+          width: auto;
+          height: auto;
+        }
+    
+        .header__logo {
+          max-width: 182px;
+          .logo__link {
+          }
+          .logo__main {
+          }
+        }
+  
+        .popup__subtitle {
+          margin-top: initial;
+          margin-bottom: 30px;
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 19.6px;
+          text-align: left;
+          color: #787878;
+        }
+    
+        .header__nav {
+          .nav__list {
+            display: grid;
+            grid-auto-flow: row;
+            gap: 30px;
+            .nav__item {
+              
+              .nav__link {
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 19.36px;
+                text-align: left;
+                color: #303030;
+                transition: color 0.3s ease-in-out;
+      
+                &_active {
+                  color: #000;
+                }
+              }
+            }
+          }
+        }
+  
+        .header__contacts {
+          display: grid;
+          grid-auto-flow: row;
+          justify-content: start;
+          justify-items: start;
+
+          .contacts__item {
+            font-family: Inter;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 21.78px;
+            text-align: left;
+            color: #000;
+            text-wrap: nowrap;
+            transition: color 0.3s ease-in-out;
+            
+            &.contacts__item_call-btn {
+              margin-bottom: 30px;
+              font-family: Inter;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 16.94px;
+              text-align: left;
+              color: #ad1818;
+              text-wrap: nowrap;
+              transition: color 0.3s ease-in-out;
+            }
+          }
+        }
+      }
+
+    }
+  }
 }
 
 // --------------------------------------- POPUP end ---------------------------------------
