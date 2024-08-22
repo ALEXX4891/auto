@@ -36,12 +36,7 @@ foreach ($recipients as $email => $name) {
 $mail->Subject = 'Заявка с automaster.one';
 
 // текст письма
-if (trim(!empty($_POST['order']))) {
-  $body = '<h1>Заказ с сайта automaster.one:</h1><br/><br/>';  
-  $body .= '<p><strong>Товар:</strong> ' . $_POST['order'] . '</p><br/>';
-} else {
-  $body = '<h1>Уведомление с сайта automaster.one:</h1><br/><br/>';  
-}
+$body = '<h1>Уведомление с сайта automaster.one:</h1><br/><br/>';
 
 if (trim(!empty($_POST['name']))) {
   $body .= '<p><strong>Имя:</strong> ' . $_POST['name'] . '</p><br/>';

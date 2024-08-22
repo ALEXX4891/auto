@@ -1396,6 +1396,7 @@ ul {
 
         @media (max-width: 760px) {
           text-align: center;
+          width: 100%;
         }
       }
       .contacts__btn {
@@ -1484,6 +1485,11 @@ ul {
           @media (max-width: 376px) {
             height: 611px;
           }
+
+          .promo__btn {
+            color: #fff;
+          }
+            
 
           &.promo__item_1 {
             position: relative;
@@ -1754,7 +1760,7 @@ ul {
                 grid-auto-flow: column;
                 gap: 15px;
 
-                @media (max-width: 376px) {
+                @media (max-width: 660px) {
                   width: 100%;
                   justify-content: space-between;
                   grid-area: d;
@@ -1982,6 +1988,7 @@ ul {
               .promo__btn {
                 max-width: 266px;
                 margin-bottom: 30px;
+                color: #fff;
 
                 @media (max-width: 1230px) {
                   margin-bottom: 53px;
